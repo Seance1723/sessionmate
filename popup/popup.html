@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SessionMate</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>SessionMate</h1>
+
+  <button id="saveSessionBtn">Save Current Session</button>
+  <button id="restoreSessionBtn">Restore Last Session</button>
+  <button id="exportSessionsBtn">Export Sessions</button>
+  <button id="importSessionsBtn">Import Sessions</button>
+
+  <input type="file" id="importFile" accept=".json" style="display:none;" />
+
+  <h2>Saved Sessions</h2>
+  <ul id="sessionsList"></ul>
+
+
+  <script src="popup.js"></script>
+</body>
+</html>

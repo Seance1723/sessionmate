@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "SessionMate",
+  "version": "1.0.0",
+  "description": "Keep a secure log of your browsing history, save entire sessions, import/export, and restore tabs anytime.",
+  "permissions": [
+    "tabs",
+    "history",
+    "storage",
+    "sessions",
+    "downloads",
+    "contextMenus",
+    "alarms",
+    "notifications",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icon_16x16.png",
+      "48": "assets/icon_48x48.png",
+      "128": "assets/icon_128x128.png"
+    }
+  },
+  "options_page": "options/options.html",
+  "icons": {
+    "16": "assets/icon_16x16.png",
+    "48": "assets/icon_48x48.png",
+    "128": "assets/icon_128x128.png"
+  }
+}

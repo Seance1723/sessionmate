@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SessionMate Options</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <h1>SessionMate — Settings</h1>
+
+  <section>
+    <h2>Auto Backup</h2>
+    <label>
+      <input type="checkbox" id="autoBackupToggle" />
+      Enable hourly auto-backup
+    </label>
+  </section>
+
+  <section>
+    <h2>Blacklist Domains</h2>
+    <textarea id="blacklist" rows="5" placeholder="One domain per line"></textarea>
+    <button id="saveBlacklistBtn">Save Blacklist</button>
+  </section>
+
+  <section>
+    <h2>Password Lock</h2>
+    <input type="password" id="passwordInput" placeholder="Set a password" />
+    <button id="savePasswordBtn">Save Password</button>
+  </section>
+
+  <script src="options.js"></script>
+</body>
+</html>
